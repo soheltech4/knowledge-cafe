@@ -2,9 +2,9 @@ import React from 'react';
 
 const Nav = () => {
     return (
-        <div>
-            <h1>Knowledge House</h1>
-            <img src="" alt="" />
+        <div className='container mx-auto flex justify-between items-center mt-5 mb-5'>
+            <h1 className='text-3xl semibold'>KNOWLEDGE HOUSE</h1>
+            <img className='h-20 w-20 rounded-full' src="../../../public/person.jpg" alt="" />
         </div>
     );
 };
