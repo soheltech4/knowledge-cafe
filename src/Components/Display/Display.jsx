@@ -12,7 +12,7 @@ const Display = () => {
     return (
         <>
             <div className='container mx-auto md:flex gap-40'>
-                <div className=" p-5 w-3/3">
+                <div className="p-5 w-3/3">
                     {
                         Datas.map(data => <Show data={data} key={data.id}></Show>)
                     }
