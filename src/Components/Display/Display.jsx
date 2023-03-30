@@ -11,13 +11,13 @@ const Display = () => {
     console.log(Datas)
     return (
         <>
-            <div className='container mx-auto grid md:grid-cols-2'>
-                <div className="DisplayContainer">
+            <div className='container mx-auto md:flex gap-40'>
+                <div className=" p-5 w-3/3">
                     {
                         Datas.map(data => <Show data={data} key={data.id}></Show>)
                     }
                 </div>
-                <div className="CartContainer">
+                <div className="bg-yellow-500 p-5 md:w-1/3">
                     <h1>Programmer Cart</h1>
                 </div>
             </div>
