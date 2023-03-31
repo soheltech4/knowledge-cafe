@@ -1,7 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBookmark } from '@fortawesome/free-solid-svg-icons'
-import { useState } from 'react';
 
 const Show = (props) => {
     const {id, authorImg, authorName, duration, img, publishDate, title} = props.data
@@ -9,8 +8,8 @@ const Show = (props) => {
     const readTime=props.readTime
 
     return (
-        <div className='mb-10 md:w-4/5'>
-            <img className='w-full rounded-lg' src={img} alt="" />
+        <div className='mb-10'>
+            <img className='rounded-lg' src={img} alt="" />
             <div className='flex justify-between items-center mt-3'>
                 <div className='flex justify-between items-center'>
                     <img className='h-10 w-10 rounded-full' src={authorImg} alt="" />

@@ -2,19 +2,30 @@ import React, {useEffect, useState} from 'react';
 import Cart from '../Cart/Cart';
 import Duration from '../Duration/Duration';
 import Show from '../Show/Show';
+import { ToastContainer, toast } from 'react-toastify';
 
 const Display = () => {
     const [Datas, setDatas] = useState([])
-    const [cart, setCart] = useState([])
+    // const [cart, setCart] = useState([])
     useEffect(()=>{
         fetch('program.json')
         .then(res => res.json())
         .then(data => setDatas(data))
     },[])
-        
+   
+ 
+    const [cart, setCart] = useState([])
+
     const CartBookmark = (Datas) => {
-        const NewCart = [...cart, Datas]
-        setCart(NewCart)
+        if(cart.includes(Datas)){
+            toast("You Have Already Bookmarked This Blog!")
+            const NewCart = [...cart, Datas]
+            setCart(NewCart)
+        }
+        else{
+            const NewCart = [...cart, Datas]
+            setCart(NewCart)
+        }
     }
 
     const [time, setTime] = useState(0)
