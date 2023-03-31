@@ -36,7 +36,7 @@ const Display = () => {
                     }
                 </div>
                 <div className="bg-slate-50 rounded p-5 md:w-1/3 static">
-                    <div className="sticky top-5">
+                    <div className="sticky top-0">
                         <Duration time={time}></Duration>
                         <h1 className='text-2xl text-center font-semibold mb-3'>Bookmarked Blogs : {cart.length}</h1>
                         {
