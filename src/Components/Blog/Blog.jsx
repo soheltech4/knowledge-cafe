@@ -2,8 +2,8 @@ import React from 'react';
 
 const Blog = () => {
     return (
-        <div className='container mx-auto'>
-            <div className='bg-blue-100 p-5 mt-10 rounded mb-5'>
+        <div className='container mx-auto p-5'>
+            <div className='bg-blue-50 p-5 mt-10 rounded mb-5'>
                 <h1 className='text-2xl font-semibold border bg-blue-200 rounded p-3 mt-3'>(1) What is Difference between Props & State?</h1>
                 <h1 className='text-xl font-semibold pl-10 mb-3 mt-2'>Answer: State which is changeable but props can not reset value. props value can only go down but its values cannot be set up.</h1>
                 <h1 className='text-2xl font-semibold border bg-blue-200 rounded p-3 mt-3'>(2) How does useState work?</h1>

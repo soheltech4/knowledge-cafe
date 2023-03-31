@@ -8,7 +8,7 @@ const Show = (props) => {
     const readTime=props.readTime
 
     return (
-        <div className='mb-10'>
+        <div className='mb-10 border bg-blue-50 p-5 rounded'>
             <img className='rounded-lg' src={img} alt="" />
             <div className='flex justify-between items-center mt-3'>
                 <div className='flex justify-between items-center'>

@@ -35,7 +35,7 @@ const Display = () => {
 
     return (
         <>
-            <div className='container mx-auto md:flex gap-40'>
+            <div className='container mx-auto md:flex gap-30'>
                 <div className="p-5 w-3/3">
                     {
                         Datas.map(data => <Show 
@@ -46,7 +46,7 @@ const Display = () => {
                             ></Show>)
                     }
                 </div>
-                <div className="bg-slate-50 rounded p-5 md:w-1/3 static">
+                <div className="bg-blue-50 p-5 mt-5 mr-5 rounded md:w-2/3 static">
                     <div className="sticky top-0">
                         <Duration time={time}></Duration>
                         <h1 className='text-2xl text-center font-semibold mb-3'>Bookmarked Blogs : {cart.length}</h1>
