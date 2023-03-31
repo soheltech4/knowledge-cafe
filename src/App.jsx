@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import './App.css'
-import Display from './Components/Display/Display'
+import { Display } from './Components/Display/Display'
+
 import Nav from './Components/Nav/Nav'
 
 function App() {

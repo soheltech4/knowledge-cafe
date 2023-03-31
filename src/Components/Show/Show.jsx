@@ -1,13 +1,13 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBookmark } from '@fortawesome/free-solid-svg-icons'
-
-
-
+import { useState } from 'react';
 
 const Show = (props) => {
-    const {authorImg, authorName, duration, img, publishDate, title} = props.data
-    console.log(props.data)
+    const {id, authorImg, authorName, duration, img, publishDate, title} = props.data
+    const CartBookmark = props.CartBookmark
+    const readTime=props.readTime
+
     return (
         <div className='mb-10 md:w-4/5'>
             <img className='w-full rounded-lg' src={img} alt="" />
@@ -19,10 +19,10 @@ const Show = (props) => {
                         <h1>{publishDate}</h1>
                     </div>
                 </div>
-                <h1>{duration} min read <a href=""><FontAwesomeIcon icon={faBookmark}/></a></h1>
+                <h1>{duration} min read <span onClick={()=>CartBookmark(props.data)}><FontAwesomeIcon icon={faBookmark}/></span></h1>
             </div>
             <h1 className='text-4xl mt-3 font-semibold'>{title}</h1>
-            <h1 className='mt-5 text-blue-600 font-semibold'><a href="">Mark as Read</a></h1>
+            <button className='mt-5 text-blue-600 font-semibold'><span onClick={()=>readTime(props.data.duration)}>Mark as Read</span></button>
         </div>
     );
 };
