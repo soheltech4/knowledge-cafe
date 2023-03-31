@@ -46,7 +46,7 @@ const Display = () => {
                             ></Show>)
                     }
                 </div>
-                <div className="p-5 mr-5 ml-5 rounded md:w-2/3 static">
+                <div className="pt-5 mr-5 ml-5 rounded md:w-2/3 static">
                     <div className="sticky top-0">
                         <Duration time={time}></Duration>
                         <div className='bg-blue-50 p-5'>
