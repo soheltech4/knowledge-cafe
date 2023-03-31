@@ -46,13 +46,15 @@ const Display = () => {
                             ></Show>)
                     }
                 </div>
-                <div className="bg-blue-50 p-5 mt-5 mr-5 rounded md:w-2/3 static">
+                <div className="p-5 mr-5 ml-5 rounded md:w-2/3 static">
                     <div className="sticky top-0">
                         <Duration time={time}></Duration>
-                        <h1 className='text-2xl text-center font-semibold mb-3'>Bookmarked Blogs : {cart.length}</h1>
-                        {
-                            cart.map(data => <Cart cart={data} key={data.id}></Cart>)
-                        }
+                        <div className='bg-blue-50 p-5'>
+                            <h1 className='text-2xl text-center font-semibold mb-3'>Bookmarked Blogs : {cart.length}</h1>
+                            {
+                                cart.map(data => <Cart cart={data} key={data.id}></Cart>)
+                            }
+                        </div>
                     </div>
                 </div>
             </div>
